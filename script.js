@@ -1,8 +1,17 @@
-let hiha = document.getElementById("btnn");
-
+const first = document.getElementById("btnn");
 let count = 0;
 
-const increment = () => {
+increase.addEventListener("click", () => {
   count++;
-  hiha.innerText = count;
-};
+  first.innerText = count;
+});
+
+decrease.addEventListener("click", () => {
+  count--;
+  first.innerText = count;
+});
+
+reset.addEventListener("click", () => {
+  count = 0;
+  first.innerText = count;
+});
